@@ -59,4 +59,6 @@ typings/
 
 # custom ignore
 *.xz
+*.gz
+*.tgz
 *.deb
