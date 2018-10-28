@@ -17,3 +17,6 @@ RUN rm /home/develop/${NODE_VER}.tar.xz
 COPY latest.tar.gz /home/develop/yarn.tar.gz
 RUN tar -xzf /home/develop/yarn.tar.gz --strip 1 -C /usr/local
 RUN rm /home/develop/yarn.tar.gz
+
+# 3. install global npm modules
+RUN yarn global add webpack webpack-cli jest jest-cli
