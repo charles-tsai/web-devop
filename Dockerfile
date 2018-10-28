@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 RUN apt update
 
-RUN mkdir /home/develop
+RUN mkdir -p /home/develop/source
 WORKDIR /home/develop
 
 # 1. install node.js
